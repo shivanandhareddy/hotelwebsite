@@ -1,17 +1,17 @@
 html{
     height: 100%;
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(5, 5, 24) 35%, rgba(0,212,255,1) 100%);
+    background-image: linear-gradient(90deg, rgba(2, 0, 36, 0.795) 0%, rgb(5, 5, 24) 35%, rgba(0,212,255,1) 100%);
 }
 
 
 
 body{
-    background-color: #2f3035;
+    /* background-color: #2f3035; */
     /* background-image: url(images/FOODY.jpg); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(5, 5, 24) 35%, rgba(0,212,255,1) 100%);
+    /* background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(5, 5, 24) 35%, rgba(0,212,255,1) 100%); */
 }
 
 .container{
@@ -73,6 +73,10 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
    
 }
+h2{
+    color: white;
+    font-size: 60px;
+}
 
 p{
     font-size: 18px;
@@ -97,6 +101,9 @@ nav a{
     padding-bottom: 10px;
     text-decoration: none;
 }
+.item1, item2{width:300px;}
+.item1{float:left;}
+.item2{float:right;}
 footer p{
     font-size: 10px;
     text-align: center;
@@ -106,16 +113,56 @@ footer p{
 .maps{
     padding-bottom:250px ;
 }
-.button{
+body {font-family: Arial;}
 
-        color: white;
-        font-family: Arial, Helvetica, sans-serif;
-        background-color: rgba(223, 37, 37, 0.986);
-        padding: 5px;
-        border-radius: 5px;
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  /* border: 1px ; */
+  /* background-color: #f1f1f1; */
+
 }
-.button:hover{
-    background-color: rgb(247, 247, 247);
-    color: black;
-    transition-duration: 0s;
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: rgb(247, 242, 242);
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgba(221, 221, 221, 0.664);
+  
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgba(204, 204, 204, 0.671);
+  color: rgb(10, 10, 10);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  -webkit-animation: fadeEffect 1s;
+
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
