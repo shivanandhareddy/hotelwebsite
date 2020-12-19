@@ -25,25 +25,98 @@
         <a href="mailto:shivanandhavasudevula200@gmail.com?" target="_blank">CONTACT</a>
         <a  class=" button"href="mailto:shivanandhavasudevula200@gmail.com?Subject=reservation&body=specify%20date%20and%20time%20if%20they%20are%20available%20we%20will%20notify%20you" target="_blank">MAKE  A RESERVATION</a>
     </nav>
-    <!--  -->
-    
-       
-    </main>
-    <br> <br>
-    <br>
-    <br>
-    <div class="bgdiner">
-        <h1>LUNCH MENU:-</h1><img     style="position: relative; size: 100px;"  src="FOODY1.jpg" alt="logo for restarent" width="500" height="500"  >
-      </div>
-  <div class="bgdiner">
-    <h1>DINNER MENU:-</h1><img style="position: relative; size: 100px;" src="FOODY-1.jpg" alt="logo for restarent"width="500" height="600">
-  </div>
-  </main>
-    <!--  -->
-    <footer>
-        <p>Lorem ipsum dolor sit, amet  - Copyright 2017©</p>
+     <h2>Our Menu :-</h2>
         
-    </footer>
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'London')" style=" color: rgb(247, 242, 242);">LUNCH&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </button>
+          <button class="tablinks" onclick="openCity(event, 'Paris')" style="color: rgb(247, 242, 242);""  >DINNER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+        </div>
+        
+        <div id="London" class="tabcontent">
+        <div class="item1">
+            <h3 style="color: white;">STARTERS</h3>
+              <p>Seafood Chowder  &emsp;&emsp;&emsp;&nbsp;$5.40 <br><br>
+                Caesar Salad      &emsp;&emsp;&emsp;&nbsp;&emsp;&nbsp;&nbsp; $5.00<br><br>
+                Clam Strips  &emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp; &nbsp;$4.00<br><br>
+                Onion Rings    &emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&nbsp;&nbsp;$2.50<br><br>
+                Mixed Green Salad  &emsp;&emsp;&emsp;$5.00<br><br></p>
+                <h3 style="color: white;">MAIN</h3>
+              <p>
+                Fillet Steak  &emsp;&emsp;&emsp;&nbsp;$5.40 <br><br>
+                Chicken Curry      &emsp;&emsp; $5.00<br><br>
+                Clam Strips  &emsp;&emsp;&emsp; &nbsp;$4.00<br><br>
+                Rib Eye Steak  &emsp;&emsp;&nbsp;$2.50<br><br>
+                Sliced Beef  &emsp;&emsp;&emsp;$5.00<br><br></p>
+        </div>
+            <div class="item2">
+                <h3 style="color: white;">DESSERTS</h3>
+                <p>
+                    Apple Pie-------------------$5.97<br><br>
+                    Banana Split Sundae----$4.71<br><br>
+                    Cheesecake----------------$6.81<br><br>
+                    Blueberry Cheesecake--$7.00<br><br>
+                    Chocolate Mousse-------$5.45<br><br>
+                    Chocolate Pancakes-----$3.00<br><br>
+                    Waffles------------------------$3.00<br><br></p>
+                    <h3 style="color: white;">BEVERAGES</h3>
+                    <p>
+                        Pink Lemonade--------$2.00<br><br>
+                        Pineapple Juice-------$2.50<br><br>
+                        Soda-----------------------$2.50<br><br>
+                        Tropical Iced Tea--------$4.00<br><br>
+                        Sparkling Apple Juice-----$2.00<br><br>
+                        Iced Tea----------------------$2.50<br><br>
+                        Coffee-------------------------$4.00<br><br>
+                        </p>
+            </div>
+        </div>
+        
+        <div id="Paris" class="tabcontent">
+          <h3 style="color: white; text-align: center;">MAINS</h3>
+          <p style="color: white; text-align: center;">Seafood Putanesca----------------------$10.00<br><br>
+            Braised Short Ribs----------------------$9.00<br><br>
+            Mini Lobster Rolls----------------------$33.00<br><br>
+            Vermicelli--------------------------------------$44.00<br><br>
+            Linguini with Clam Sauce-----------------$44.00<br><br>
+            Atlantic Salmon----------------------$23.00<br><br>
+            Fillet Mignon----------------------$7.00<br><br>
+            Grilled Steak----------------------$11.00<br><br>
+            Crispy Tacos----------------------$4.00<br><br></p>
+            <h3 style="color: white; text-align: center;">BEVERAGES</h3>
+            <p style="color: white; text-align: center;">
+                Apple Juice----------------------$5.00<br><br>
+                Pineapple Juice----------------------$4.00<br><br>
+                Orange Juice----------------------$6.00<br><br>
+                Bottomless Iced Tea----------------------$7.00<br><br>
+                Strawberry Smoothie----------------------$9.00<br><br>
+                Iced Coffee----------------------$4.00<br><br>
+                Pink Lemonade--------$2.00<br><br>
+                Pineapple Juice-------$2.50<br><br>
+                Soda-----------------------$2.50<br><br>
+                Tropical Iced Tea--------$4.00<br><br>
+                Sparkling Apple Juice-----$2.00<br><br>
+                Iced Tea----------------------$2.50<br><br>
+                Coffee-------------------------$4.00<br><br>
+                </p>
+        </div>
+        
+      
+        
+        <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        </script>
 
 </div>
 </body>
